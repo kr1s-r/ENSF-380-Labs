@@ -1,0 +1,14 @@
+# Ignore compiled Java files and folders
+**/bin/
+**/*.class
+
+# Ignore generated JavaDoc output
+**/doc/
+**/javadoc/
+
+# VS Code settings
+**/.vscode/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
