@@ -12,3 +12,9 @@
 # OS-specific junk
 .DS_Store
 Thumbs.db
+
+# Environmental Variables
+.env
+
+# Zipped files
+*.zip
