@@ -1,6 +1,6 @@
 # ENSF 380 Labs
 
-This repository contains my ENSF 380 labs in Java:
+This repository contains my ENSF 380 labs from the Summer 2025 semester in Java:
 
 ---
 
@@ -20,14 +20,11 @@ This repository contains my ENSF 380 labs in Java:
 
 ## 📁 Folder Structure
 
-Your code should be organized as follows:
+Your code is organized as the following:
 
 ```
 Lab Code/
-├── bin/    # Compiled .class files
-├── lib/    # External libraries (e.g., JDBC drivers)
-├── src/    # Java source files
-├── test/   # JUnit test files (if any)
+├── src/edu/ucalgary/oop/    # Java source, test files and compiled .class files
 └── README.md
 ```
 
@@ -37,7 +34,7 @@ Lab Code/
 
 ### Compiling
 
-To compile all Java files in the `src` folder and output to `bin`:
+To compile all Java files in the `src` folder:
 
 ```cmd
 javac src/edu/ucalgary/oop/*.java
@@ -58,20 +55,20 @@ If you have JUnit tests, follow these steps:
 1. **Compile your source and test files (Windows example):**
 
 ```cmd
-javac -cp .;C\**\lib\* edu/ucalgary/oop/*.java
+javac -cp .;C\<Folder with jar files>\* edu/ucalgary/oop/*.java
 ```
 
 2. **Run a specific JUnit test class:**
 
 ```cmd
-java -cp .;C\**lib\* org.junit.runner.JUnitCore edu.ucalgary.oop.ApplicationNameTest
+java -cp .;C\<Folder with jar files>\* org.junit.runner.JUnitCore edu.ucalgary.oop.ApplicationNameTest
 ```
 
 - Replace `ApplicationNameTest` with the name of your test class.
+- Replace `<Folder with jar files>` with the path of where your .jar files are located.
 
 **Tips:**
 
-- Make sure your test classes are in the correct package and folder (e.g., `test/edu/ucalgary/oop/ApplicationTest.java`).
 - If you see errors about missing classes, check your classpath and folder structure.
 - Test results will be printed in the terminal; failures and errors will be shown with stack traces.
 
